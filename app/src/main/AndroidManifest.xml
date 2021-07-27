@@ -10,16 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.My_First_Application">
         <activity android:name=".Add_view_from_Java">
+
+        </activity>
+        <activity android:name=".Textbox_Text_Display">
+
+        </activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Textbox_Text_Display">
-
-        </activity>
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

@@ -9,14 +9,25 @@
         android:id="@+id/llmyLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Back"
+            android:layout_margin="20dp"
+            android:padding="10dp">
+        </Button>
+
         <Button
             android:id="@+id/btnSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:text="Save"
+            android:layout_margin="20dp"
             android:padding="10dp">
         </Button>
 
