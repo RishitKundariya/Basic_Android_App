@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+    android:gravity="center_horizontal">
+     <EditText
+         android:id="@+id/etInputtextBox"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Enter the name"
+         android:textSize="30dp"
+         android:padding="10dp">
+     </EditText>
+    <Button
+        android:id="@+id/btnShowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:text="Go">
+    </Button>
+    <TextView
+        android:id="@+id/tvShowtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:textSize="30dp"
+        android:background="#045"
+        android:textColor="#fff">
+    </TextView>
+</LinearLayout>
+
+
