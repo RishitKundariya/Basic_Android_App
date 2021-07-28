@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -16,9 +17,7 @@ public class Add_view_from_Java extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_view_from_java);
-        btClick=findViewById(R.id.btnSave);
-        llLayout=findViewById(R.id.llmyLayout);
-        btnBack=findViewById(R.id.btnBack);
+        setReference();
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,12 +35,28 @@ public class Add_view_from_Java extends AppCompatActivity {
         });
 
     }
+
+    private void setReference() {
+        btClick=findViewById(R.id.btnSave);
+        llLayout=findViewById(R.id.llmyLayoutrk);
+        btnBack=findViewById(R.id.btnBack);
+    }
+
     private void addButton(){
-       Button btn=new Button(this);
-       btn.setTextSize(16);
-       btn.setText("Button - "+count);
-       btn.setPadding(10,10,10,10);
-       llLayout.addView(btn);
+        // add button from java file
+        //    Button btn=new Button(this);
+        //   btn.setTextSize(16);
+        //   btn.setText("Button - "+count);
+        //   btn.setPadding(10,10,10,10);
+        //   llLayout.addView(btn);
+
+        // add button from layout file
+
+        View v= LayoutInflater.from(this).inflate(R.layout.view_custom_button,null);
+        Button btn=v.findViewById(R.id.btnCustom);
+        btn.setText("Button - "+ count);
+        btn.setPadding(10,10,10,10);
+        llLayout.addView(v);
        count++;
     }
 }
