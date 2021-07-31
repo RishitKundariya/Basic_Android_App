@@ -27,7 +27,8 @@ public class Textbox_Text_Display extends AppCompatActivity {
              public void onClick(View v) {
                  Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                  startActivity(intent);
-                 setContentView(R.layout.activity_main);
+//                 setContentView(R.layout.activity_main);
+//                 onPause();
              }
          });
          btnNext.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +36,8 @@ public class Textbox_Text_Display extends AppCompatActivity {
              public void onClick(View v) {
                  Intent intent =new Intent(getApplicationContext(),Add_view_from_Java.class);
                  startActivity(intent);
-                 setContentView(R.layout.activity_add_view_from_java);
+//                 setContentView(R.layout.activity_add_view_from_java);
+//                 onPause();
              }
          });
 

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
              public void onClick(View v) {
                  Intent intent=new Intent(getApplicationContext(),Textbox_Text_Display.class);
                  startActivity(intent);
-                 setContentView(R.layout.activity_textbox_text_display);
+//                 setContentView(R.layout.activity_textbox_text_display);
              }
          });
     }

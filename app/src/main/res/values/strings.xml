@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My_First_Application</string>
+    <string-array name="strValues">
+        <item>Shubham</item>
+        <item>Prince</item>
+        <item>jay</item>
+        <item>moto</item>
+        <item>rushi</item>
+    </string-array>
 </resources>
